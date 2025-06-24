@@ -19,7 +19,7 @@ toggleButton.addEventListener("click", () => {
   navMenu.classList.toggle("hidden");
 });
 
-// ✅ Concurrent requests using Promise.all()
+// Concurrent requests using Promise.all()
 Promise.all([
   fetch(API_URL).then((res) => res.json()),
   fetch(SHUFFLE_API_URL).then((res) => res.json())
